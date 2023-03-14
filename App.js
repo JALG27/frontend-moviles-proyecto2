@@ -6,6 +6,13 @@ import Login from './src/Screens/LoginRegister/Login/Login';
 import Signup_EnterEmail from './src/Screens/LoginRegister/Signup/Signup_EnterInformation'
 import Signup_AccountCreated from './src/Screens/LoginRegister/Signup/Signup_AccountCreated'
 import Mainpage from './src/Screens/Mainpage/Mainpage';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import NewTweet from './src/Screens/NewTweet/NewTweet';
+import LikesPage from './src/Screens/Mainpage/LikesPage';
+import SearchUserPage from './src/Screens/Mainpage/SearchUserPage';
+import My_UserProfile from './src/Screens/Profile/My_UserProfile';
+//import NotificationScreen from './src/Screens/NotificationScreen/NotificationScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -25,8 +32,27 @@ export default function App() {
         <Stack.Screen name="Signup_AccountCreated" component={Signup_AccountCreated} />
 
         <Stack.Screen name="MainPage" component={Mainpage} />
+        <Stack.Screen name="NewTweet" component={NewTweet} 
+        options={{
+          animation: 'slide_from_bottom'
+        }}
+        />
 
-        
+        <Stack.Screen name="SearchUserPage" component={SearchUserPage} 
+        options={{
+          animation: 'slide_from_bottom'
+        }}
+        />
+
+<Stack.Screen name="LikesPage" component={LikesPage} 
+        />
+
+<Stack.Screen name="My_UserProfile" component={My_UserProfile} 
+        options={{
+          animation: 'slide_from_left'
+        }}
+        />
+         
       </Stack.Navigator>
     </NavigationContainer>
   );

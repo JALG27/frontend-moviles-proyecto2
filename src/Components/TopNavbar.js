@@ -4,12 +4,16 @@ import logo from '../../assets/Logo.png'
 import { icon1, logo2 } from '../CommonCss/pagecss'
 import { AntDesign } from '@expo/vector-icons';
 
-const TopNavbar = () => {
+const TopNavbar = ({ navigation, page }) => {
     return(
         <View style={styles.container}>
             <Image source={logo} style={logo2} />
-            <AntDesign name="pluscircleo" size={24} color="black" style={icon1} />
-            
+            {
+                page === 'MainPage' &&
+                <AntDesign name="pluscircleo" size={24} color="black" style={icon1} onPress = {
+                    () => navigation.navigate('NewTweet')
+                } />
+            }
         </View>
     )
 }

@@ -67,8 +67,13 @@ const Post_Big_Card = (
                                     <Text style={styles.commentuser}>{item.username}</Text>
                                     <Text style={styles.commenttext}>{item.comment}</Text>
                                 </View>
+
+                                
+                                
                             )
+                            
                         })
+                        
                     }
                 </View>
             }
