@@ -33,15 +33,11 @@ const styles = StyleSheet.create({
     },
     gohomeicon:{
         position: 'absolute',
-        top: 10,
-        left: 10,
+        top: 15,
+        left: 20,
         zIndex: 100,
         color: 'white',
         fontSize: 30,
 
     },
-    c1: {
-        width: '100%',
-        flexDirection: 'column',
-    }
 })

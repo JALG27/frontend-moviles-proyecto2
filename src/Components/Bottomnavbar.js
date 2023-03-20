@@ -6,7 +6,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { icon1 } from '../CommonCss/pagecss';
 
 const Bottomnavbar = ({navigation, page}) => {
-    console.log(page)
+    //console.log(page)
     return(
         <View style={styles.container}>
             {

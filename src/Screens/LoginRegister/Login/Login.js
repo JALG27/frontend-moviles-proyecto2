@@ -7,7 +7,7 @@ import { formbtn, formHead, formInput, formTextLinkCenter } from '../../../Commo
 const Login = ({ navigation }) => {
     return(
         <View style={containerFull}>
-            <Text style={formHead}>Bienvenido a Twitter</Text>
+            <Text style={formHead}>Bienvenido a Twisgram</Text>
             <Image source={Logo} style={logo1} />
             <Text style={formHead}>Login</Text>
             <TextInput placeholder="Ingresa tu Email" style={formInput} />

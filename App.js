@@ -11,7 +11,8 @@ import NewTweet from './src/Screens/NewTweet/NewTweet';
 import LikesPage from './src/Screens/Mainpage/LikesPage';
 import SearchUserPage from './src/Screens/Mainpage/SearchUserPage';
 import My_UserProfile from './src/Screens/Profile/My_UserProfile';
-//import NotificationScreen from './src/Screens/NotificationScreen/NotificationScreen';
+import NotificationScreen from './src/Screens/NotificationScreen/NotificationScreen';
+import Settings1 from './src/Screens/Settings/Settings1';
 
 
 const Stack = createNativeStackNavigator();
@@ -44,14 +45,16 @@ export default function App() {
         }}
         />
 
-<Stack.Screen name="LikesPage" component={LikesPage} 
+        <Stack.Screen name="LikesPage" component={LikesPage} 
         />
 
-<Stack.Screen name="My_UserProfile" component={My_UserProfile} 
+        <Stack.Screen name="My_UserProfile" component={My_UserProfile} 
         options={{
           animation: 'slide_from_left'
         }}
         />
+
+        <Stack.Screen name="Settings_1" component={Settings1}/>
          
       </Stack.Navigator>
     </NavigationContainer>

@@ -3,6 +3,7 @@ import React from 'react'
 import logo from '../../assets/Logo.png'
 import { icon1, logo2 } from '../CommonCss/pagecss'
 import { AntDesign } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 const TopNavbar = ({ navigation, page }) => {
     return(
@@ -12,6 +13,13 @@ const TopNavbar = ({ navigation, page }) => {
                 page === 'MainPage' &&
                 <AntDesign name="pluscircleo" size={24} color="black" style={icon1} onPress = {
                     () => navigation.navigate('NewTweet')
+                } />
+            }
+
+{
+                page === 'My_UserProfile' &&
+                <Ionicons name="settings-sharp" size={24} color="black" style={icon1} onPress = {
+                    () => navigation.navigate('Settings_1')
                 } />
             }
         </View>
