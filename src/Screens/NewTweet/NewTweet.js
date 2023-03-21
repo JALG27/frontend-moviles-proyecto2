@@ -12,7 +12,7 @@ const NewTweet = ({navigation}) => {
         />
 
         <View style={styles.c1}>
-            <Text style={formHead2}>Prueba
+            <Text style={formHead2}>Nuevo Tweet BETA
             </Text>
             <TextInput style={styles.searchbar}
             placeholder="Buscar" />

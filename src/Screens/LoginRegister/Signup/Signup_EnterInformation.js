@@ -61,7 +61,7 @@ const Signup_EnterInformation = ({navigation}) => {
                 setEmail(text)
             }}
             />
-            <TextInput placeholder="Ingresa tu Biografia" style={formInput} />  
+     
             <TextInput placeholder="Ingresa tu Password" style={formInput} secureTextEntry={true} />
             <TextInput placeholder="Confirmar Password" style={formInput} secureTextEntry={true} />
 
